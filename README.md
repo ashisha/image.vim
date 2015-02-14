@@ -7,8 +7,9 @@ View images in Vim, because Vim is awesome!
 
 Features
 =========
-* Let's you pre-view images in Vim!
+* Let's you open (preview) images in Vim!
 * It's safe, never modifies the original image
+
 
 Requirements
 ============
