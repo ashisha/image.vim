@@ -1,6 +1,8 @@
 # image.vim
 View images in Vim, because Vim is awesome!
 
+![](https://github.com/ashisha/image.vim/blob/master/screenshot/image.vim.jpg)
+
 
 
 Features
