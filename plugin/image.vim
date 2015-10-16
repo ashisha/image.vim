@@ -43,6 +43,13 @@ def getAsciiImage(imageFile, maxWidth, maxHeight):
     colorPalette = "@%#*+=-:. "
     lencolor = len(colorPalette)
 
+    # Delete the current buffer so that we dont overwrite the real image file
+    vim.command("bd!")
+    # get a new buffer
+    # enew is safe enough since we did not specified a buftype, so we
+    # cannot save this
+    vim.command("enew")
+
     # clear the buffer
     vim.current.buffer[:] = None
 
@@ -63,12 +70,6 @@ imagefile = vim.eval("imagefile")
 width = vim.current.window.width
 height = vim.current.window.height
 
-# Delete the current buffer so that we dont overwrite the real image file
-vim.command("bd!")
-
-# Also set the font to Courier which is monospaced
-vim.command("set guifont=Courier")
-vim.command("put =&guifont")
 getAsciiImage(imagefile, width, height)
 
 EOF
