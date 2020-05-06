@@ -1,7 +1,9 @@
 command! -nargs=0 Image call DisplayImage()
 
-if !has("python")
+if !has("python3")
     echo "image.vim requires python support"
+    echo "First, pip install Pillow"
+    echo "for mac os X homebrew version, /usr/local/opt/python@3.8/bin/python3 -m pip install Pillow"
     finish
 endif
 
@@ -53,9 +55,9 @@ def getAsciiImage(imageFile, maxWidth, maxHeight):
     # clear the buffer
     vim.current.buffer[:] = None
 
-    for y in xrange(scaledHeight):
+    for y in range(scaledHeight):
         asciiImage = ""
-        for x in xrange(scaledWidth):
+        for x in range(scaledWidth):
             rgb = pixels[x, y]
             if not isinstance(rgb, tuple):
                 rgb = (rgb,)
