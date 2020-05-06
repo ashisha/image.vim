@@ -11,7 +11,7 @@ au BufRead *.png,*.jpg,*.jpeg :call DisplayImage()
 
 function! DisplayImage()
 set nowrap
-python << EOF
+python3 << EOF
 from __future__ import division
 import vim
 from PIL import Image
