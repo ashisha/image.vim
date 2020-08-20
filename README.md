@@ -29,6 +29,8 @@ Installation
   * `Plugin 'ashisha/image.vim'`
 * [NeoBundle](https://github.com/Shougo/neobundle.vim)
   * `NeoBundle 'ashisha/image.vim'`
+* [Plug](https://github.com/junegunn/vim-plug)
+  * `Plug 'ashisha/image.vim'`
 * Manual
   * Copy image.vim into your `~/.vim/plugin/` directory
 
