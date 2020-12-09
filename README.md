@@ -9,7 +9,11 @@ View images in Vim, because Vim is awesome!
 
 Features
 =========
-* Let's you open (preview) images in Vim!
+* Let's you open (preview) images in Vim!:
+  Image supported:
+    * Png
+    * jpg - jpeg
+    * webp
 * It's safe, never modifies the original image (unless you force write)
 * Adapted to work with python3 instead of python2
 
