@@ -1,9 +1,9 @@
-# Image.vim
-Forked from: [Image.vim](https://github.com/ashisha/image.vim)
+# Image.viDaniel1404d from: [Image.vim](https://github.com/Daniel1404/image.vim)
+Original project is Unmainteined.
 
 View images in Vim, because Vim is awesome!
 
-![](https://github.com/ashisha/image.vim/blob/master/screenshot/image.vim.jpg)
+![](https://github.com/Daniel1404/image.vim/blob/master/screenshot/image.vim.jpg)
 
 
 
@@ -44,11 +44,11 @@ Requirements
 Installation
 ============
 * [Pathogen](https://github.com/tpope/vim-pathogen)
-  *  `git clone https://github.com/ashisha/image.vim ~/.vim/bundle/image.vim`
+  *  `git clone https://github.com/Daniel1404/image.vim ~/.vim/bundle/image.vim`
 * [Vundle](https://github.com/gmarik/vundle)
-  * `Plugin 'ashisha/image.vim'`
+  * `Plugin 'Daniel1404/image.vim'`
 * [NeoBundle](https://github.com/Shougo/neobundle.vim)
-  * `NeoBundle 'ashisha/image.vim'`
+  * `NeoBundle 'Daniel1404/image.vim'`
 * Manual
   * Copy image.vim into your `~/.vim/plugin/` directory
 
