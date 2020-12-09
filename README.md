@@ -1,4 +1,4 @@
-# image.vim
+# Image.vim
 Forked from: [Image.vim](https://github.com/ashisha/image.vim)
 
 View images in Vim, because Vim is awesome!
@@ -21,6 +21,7 @@ Requirements
 
   If you see `+python`, your Vim has python support. If not, compile or install yourself
   a vim with python support.
+
   In arch:
   ```
   sudo pacman -S gvim
