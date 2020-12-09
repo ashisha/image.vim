@@ -47,10 +47,21 @@ Installation
   *  `git clone https://github.com/Daniel1404/image.vim ~/.vim/bundle/image.vim`
 * [Vundle](https://github.com/gmarik/vundle)
   * `Plugin 'Daniel1404/image.vim'`
+  Then reload your .vimrc file and Install the Plugin.
+
+  ```
+    :so ~/.vimrc
+    :PluginInstall
+  ```
 * [NeoBundle](https://github.com/Shougo/neobundle.vim)
   * `NeoBundle 'Daniel1404/image.vim'`
 * Manual
-  * Copy image.vim into your `~/.vim/plugin/` directory
+  Copy image.vim into your `~/.vim/plugin/` directory
+  ```
+  git clone https://github.com/Daniel1404/image.vim
+  cd image.vim
+  cp image.vim ~/.vim/plugin/
+  ```
 
 Errors
 ============
