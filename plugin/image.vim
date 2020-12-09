@@ -5,7 +5,7 @@ if !has("python3")
     finish
 endif
 
-au BufRead *.png,*.jpg,*.jpeg :call DisplayImage()
+au BufRead *.png,*.jpg,*.jpeg,*.webp :call DisplayImage()
 
 function! DisplayImage()
 set nowrap
