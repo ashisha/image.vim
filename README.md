@@ -1,4 +1,5 @@
-# Image.viDaniel1404d from: [Image.vim](https://github.com/Daniel1404/image.vim)
+# Image.vim 
+The [Image.vim](https://github.com/Daniel1404/image.vim)
 Original project is Unmainteined.
 
 View images in Vim, because Vim is awesome!
@@ -6,14 +7,14 @@ View images in Vim, because Vim is awesome!
 ![](https://github.com/Daniel1404/image.vim/blob/master/screenshot/image.vim.jpg)
 
 
-
 Features
 =========
 * Let's you open (preview) images in Vim!:
   Image supported:
-    * Png
-    * jpg - jpeg
-    * webp
+    * .png
+    * .jpg
+    * .jpeg
+    * .webp
 * It's safe, never modifies the original image (unless you force write)
 * Adapted to work with python3 instead of python2
 
