@@ -1,7 +1,11 @@
 command! -nargs=0 Image call DisplayImage()
 
-if !has("python")
-    echo "image.vim requires python support"
+if has('python')
+    command! -nargs=1 Python python <args>
+elseif has('python3')
+    command! -nargs=1 Python python3 <args>
+else
+    echo "image.vim requires Vim compiled with +python or +python3"
     finish
 endif
 
@@ -9,10 +13,13 @@ au BufRead *.png,*.jpg,*.jpeg :call DisplayImage()
 
 function! DisplayImage()
 set nowrap
-python << EOF
+Python << EOF
 from __future__ import division
 import vim
 from PIL import Image
+from sys import version_info
+if version_info[0] < 3:
+    range = xrange
 
 def getAsciiImage(imageFile, maxWidth, maxHeight):
     try:
@@ -53,9 +60,9 @@ def getAsciiImage(imageFile, maxWidth, maxHeight):
     # clear the buffer
     vim.current.buffer[:] = None
 
-    for y in xrange(scaledHeight):
+    for y in range(scaledHeight):
         asciiImage = ""
-        for x in xrange(scaledWidth):
+        for x in range(scaledWidth):
             rgb = pixels[x, y]
             if not isinstance(rgb, tuple):
                 rgb = (rgb,)
